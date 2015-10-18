@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">GPA Calculator</string>
+
+    <string-array name="credit_array">
+        <item>Credit</item>
+        <item>1 Credit</item>
+        <item>2 Credits</item>
+        <item>3 Credits</item>
+        <item>4 Credits</item>
+
+    </string-array>
+
+    <string-array name="grade_array">
+        <item>Grade</item>
+        <item>A+</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>D-</item>
+        <item>F</item>
+    </string-array>
 </resources>
