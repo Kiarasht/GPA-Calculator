@@ -5,99 +5,99 @@
     android:weightSum="1">
 
     <Spinner
+        android:id="@+id/spinner_1_L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_1_L"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/space" />
 
     <Space
+        android:id="@+id/space"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:id="@+id/space"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
     <Spinner
+        android:id="@+id/spinner_1_R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_1_R"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/space" />
 
     <Spinner
+        android:id="@+id/spinner_2_L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_2_L"
         android:layout_above="@+id/spinner_1_L"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/space" />
 
     <Spinner
+        android:id="@+id/spinner_2_R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_2_R"
         android:layout_above="@+id/spinner_1_R"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/space" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="GPA"
-        android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp" />
+        android:layout_marginTop="21dp"
+        android:text="GPA"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner
+        android:id="@+id/spinner_3_R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_3_R"
         android:layout_above="@+id/spinner_2_R"
         android:layout_alignParentEnd="true"
         android:layout_toEndOf="@+id/space" />
 
     <Spinner
+        android:id="@+id/spinner_3_L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_3_L"
         android:layout_above="@+id/spinner_2_L"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/space" />
 
     <Spinner
+        android:id="@+id/spinner_4_L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_4_L"
         android:layout_above="@+id/spinner_3_L"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/space" />
 
     <Spinner
+        android:id="@+id/spinner_4_R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_4_R"
         android:layout_above="@+id/spinner_3_R"
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/spinner_3_R" />
 
     <Spinner
+        android:id="@+id/spinner_5_L"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_5_L"
         android:layout_above="@+id/spinner_4_L"
         android:layout_alignParentStart="true"
         android:layout_toStartOf="@+id/space" />
 
     <Spinner
+        android:id="@+id/spinner_5_R"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/spinner_5_R"
         android:layout_alignBottom="@+id/spinner_5_L"
         android:layout_alignParentEnd="true"
         android:layout_alignStart="@+id/spinner_4_R" />

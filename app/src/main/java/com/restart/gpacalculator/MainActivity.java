@@ -23,9 +23,6 @@ public class MainActivity extends Activity {
     private Spinner spinner_5_L;
     private Spinner spinner_5_R;
     private TextView gpa;
-    private double total;
-    private double totalattempt;
-    private double courses;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,9 +38,10 @@ public class MainActivity extends Activity {
     }
 
     private void calculateGPA() {
-        total = 0;
-        totalattempt = 0;
-        courses = 0;
+        double total = 0;
+        double totalattempt = 0;
+        double courses = 0;
+
         if (spinner_1_L.getSelectedItemPosition() > 0) {
             if (spinner_1_R.getSelectedItemPosition() > 0) {
                 ++courses;
@@ -118,52 +116,52 @@ public class MainActivity extends Activity {
     }
 
     private void setupspinners() {
-        spinner_1_L = (Spinner)findViewById(R.id.spinner_1_L);
+        spinner_1_L = (Spinner) findViewById(R.id.spinner_1_L);
         ArrayAdapter<String> spinnerArrayAdapter_1_L = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.credit_array));
         spinnerArrayAdapter_1_L.setDropDownViewResource(R.layout.spinner_item);
         spinner_1_L.setAdapter(spinnerArrayAdapter_1_L);
 
-        spinner_1_R = (Spinner)findViewById(R.id.spinner_1_R);
+        spinner_1_R = (Spinner) findViewById(R.id.spinner_1_R);
         ArrayAdapter<String> spinnerArrayAdapter_1_R = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.grade_array));
         spinnerArrayAdapter_1_R.setDropDownViewResource(R.layout.spinner_item);
         spinner_1_R.setAdapter(spinnerArrayAdapter_1_R);
 
-        spinner_2_L = (Spinner)findViewById(R.id.spinner_2_L);
+        spinner_2_L = (Spinner) findViewById(R.id.spinner_2_L);
         ArrayAdapter<String> spinnerArrayAdapter_2_L = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.credit_array));
         spinnerArrayAdapter_2_L.setDropDownViewResource(R.layout.spinner_item);
         spinner_2_L.setAdapter(spinnerArrayAdapter_2_L);
 
-        spinner_2_R = (Spinner)findViewById(R.id.spinner_2_R);
+        spinner_2_R = (Spinner) findViewById(R.id.spinner_2_R);
         ArrayAdapter<String> spinnerArrayAdapter_2_R = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.grade_array));
         spinnerArrayAdapter_2_R.setDropDownViewResource(R.layout.spinner_item);
         spinner_2_R.setAdapter(spinnerArrayAdapter_2_R);
 
-        spinner_3_L = (Spinner)findViewById(R.id.spinner_3_L);
+        spinner_3_L = (Spinner) findViewById(R.id.spinner_3_L);
         ArrayAdapter<String> spinnerArrayAdapter_3_L = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.credit_array));
         spinnerArrayAdapter_3_L.setDropDownViewResource(R.layout.spinner_item);
         spinner_3_L.setAdapter(spinnerArrayAdapter_3_L);
 
-        spinner_3_R = (Spinner)findViewById(R.id.spinner_3_R);
+        spinner_3_R = (Spinner) findViewById(R.id.spinner_3_R);
         ArrayAdapter<String> spinnerArrayAdapter_3_R = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.grade_array));
         spinnerArrayAdapter_3_R.setDropDownViewResource(R.layout.spinner_item);
         spinner_3_R.setAdapter(spinnerArrayAdapter_3_R);
 
-        spinner_4_L = (Spinner)findViewById(R.id.spinner_4_L);
+        spinner_4_L = (Spinner) findViewById(R.id.spinner_4_L);
         ArrayAdapter<String> spinnerArrayAdapter_4_L = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.credit_array));
         spinnerArrayAdapter_4_L.setDropDownViewResource(R.layout.spinner_item);
         spinner_4_L.setAdapter(spinnerArrayAdapter_4_L);
 
-        spinner_4_R = (Spinner)findViewById(R.id.spinner_4_R);
+        spinner_4_R = (Spinner) findViewById(R.id.spinner_4_R);
         ArrayAdapter<String> spinnerArrayAdapter_4_R = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.grade_array));
         spinnerArrayAdapter_4_R.setDropDownViewResource(R.layout.spinner_item);
         spinner_4_R.setAdapter(spinnerArrayAdapter_4_R);
 
-        spinner_5_L = (Spinner)findViewById(R.id.spinner_5_L);
+        spinner_5_L = (Spinner) findViewById(R.id.spinner_5_L);
         ArrayAdapter<String> spinnerArrayAdapter_5_L = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.credit_array));
         spinnerArrayAdapter_5_L.setDropDownViewResource(R.layout.spinner_item);
         spinner_5_L.setAdapter(spinnerArrayAdapter_5_L);
 
-        spinner_5_R = (Spinner)findViewById(R.id.spinner_5_R);
+        spinner_5_R = (Spinner) findViewById(R.id.spinner_5_R);
         ArrayAdapter<String> spinnerArrayAdapter_5_R = new ArrayAdapter<>(this, R.layout.spinner_item, getResources().getStringArray(R.array.grade_array));
         spinnerArrayAdapter_5_R.setDropDownViewResource(R.layout.spinner_item);
         spinner_5_R.setAdapter(spinnerArrayAdapter_5_R);
